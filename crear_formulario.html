@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Formulario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Menú de navegación -->
+  <nav class="top-nav">
+    <ul>
+      <li><a href="dashboard.html">Inicio</a></li>
+      <li><a href="#">Crear formulario</a></li>
+      <li><a href="#">Aprobaciones</a></li>
+      <li class="right"><a href="#">Cerrar sesión</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido del formulario -->
+  <div class="background-container">
+    <div class="overlay">
+      <div class="form-container">
+        <h2>Crear nuevo formulario</h2>
+        <form class="custom-form">
+          <div class="form-group">
+            <label for="nombre">N° de Reserva</label>
+            <input type="text" id="nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="correo">N° de Huespedes</label>
+            <input type="email" id="correo" required>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Nombre del titular</label>
+            <input type="text" id="telefono" required>
+          </div>
+          <div class="form-group">
+            <label for="direccion">Valor habitacion</label>
+            <input type="text" id="direccion" required>
+          </div>
+          <div class="form-group">
+            <label for="fecha">Nombre establecimiento</label>
+            <input type="date" id="fecha" required>
+          </div>
+          <div class="form-group">
+            <label for="ciudad">RNT</label>
+            <input type="text" id="ciudad" required>
+          </div>
+          <div class="form-group">
+            <label for="pais">N° Habitaciones</label>
+            <input type="text" id="pais" required>
+          </div>
+          <!-- Botón alineado a la izquierda -->
+          <div class="form-actions">
+            <button type="submit" class="btn-black">Crear formulario</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">Ayuda</a>
+      <a href="#">Redes</a>
+      <a href="#">Información</a>
+    </div>
+    <p>Todos los derechos reservados © 2025</p>
+  </footer>
+</body>
+</html>

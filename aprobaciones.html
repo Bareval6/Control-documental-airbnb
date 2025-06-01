@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aprobaciones</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Menú de navegación -->
+  <nav class="top-nav">
+    <ul>
+      <li><a href="dashboard.html">Inicio</a></li>
+      <li><a href="crear_formulario.html">Crear formulario</a></li>
+      <li><a href="#">Aprobaciones</a></li>
+      <li class="right"><a href="#">Cerrar sesión</a></li>
+    </ul>
+  </nav>
+
+  <!-- Fondo y contenido -->
+  <div class="background-container">
+    <div class="overlay">
+      <div class="aprobaciones-container">
+        <h2 class="titulo-aprobaciones">Aprobaciones pendientes</h2>
+
+        <!-- Tarjeta de aprobación 1 -->
+        <div class="aprobacion-card" onclick="alert('Ingresaste a la aprobación #1')">
+          <div class="fila-aprobacion">
+            <p class="destacado">R0038</p>
+            <p>Mayo 1, 2025</p>
+            <p>Jose Cardona</p>
+            <p>1 Huesped</p>
+          </div>
+          <div class="detalle-aprobacion">
+            Pendiente por aprobar.
+          </div>
+        </div>
+
+        <!-- Tarjeta de aprobación 2 -->
+        <div class="aprobacion-card" onclick="alert('Ingresaste a la aprobación #2')">
+          <div class="fila-aprobacion">
+            <p class="destacado">R0039</p>
+            <p>Abril 15, 2025</p>
+            <p>Julian Lopez</p>
+            <p>5 Huespedes</p>
+          </div>
+          <div class="detalle-aprobacion">
+            Aprobado enviado al TRA.
+          </div>
+        </div>
+
+        <!-- Tarjeta de aprobación 2 -->
+        <div class="aprobacion-card" onclick="alert('Ingresaste a la aprobación #2')">
+          <div class="fila-aprobacion">
+            <p class="destacado">R0040</p>
+            <p>Abril 25, 2025</p>
+            <p>Alexander Arias</p>
+            <p>2 Huespedes</p>
+          </div>
+          <div class="detalle-aprobacion">
+            Rechazado.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">Ayuda</a>
+      <a href="#">Redes</a>
+      <a href="#">Información</a>
+    </div>
+    <p>Todos los derechos reservados © 2025</p>
+  </footer>
+
+</body>
+</html>

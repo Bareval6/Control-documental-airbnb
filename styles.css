@@ -1,0 +1,377 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: 'Segoe UI', sans-serif;
+    height: 100%;
+  }
+  
+  /* Fondo con imagen */
+  .background-container {
+    background-image: url('img/fondo.jpg'); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Caja del formulario */
+  .login-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .logo-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .login-box button:hover {
+    background-color: #333;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #111;
+    color: #ccc;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 500px) {
+    .login-box {
+      padding: 25px;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+  /* dashboard*/
+
+  /* Menú superior */
+.top-nav {
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 10px 20px;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.top-nav ul li {
+  margin-right: 25px;
+}
+
+.top-nav ul li.right {
+  margin-left: auto;
+}
+
+.top-nav ul li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Fondo y overlay */
+.background-container {
+  background-image: url('img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  height: 100%;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-content {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Botones */
+.button-row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-black, .btn-white {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s;
+}
+
+.btn-black {
+  background-color: black;
+  color: white;
+}
+
+.btn-black:hover {
+  background-color: #333;
+}
+
+.btn-white {
+  background-color: white;
+  color: black;
+}
+
+.btn-white:hover {
+  background-color: #e4e4e4;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .top-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .dashboard-content {
+    padding: 20px;
+  }
+}
+ /* crear formulario */
+ /* Contenedor del formulario */
+.form-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px 30px;
+  border-radius: 10px;
+  color: white;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Estructura del formulario */
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Grupo de campo + etiqueta */
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group label {
+  width: 180px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Botón alineado a la derecha */
+.form-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-group label {
+    width: auto;
+  }
+
+  .form-actions {
+    text-align: center;
+  }
+}
+ /*aprobaciones*/
+ /* Contenedor general de aprobaciones */
+.aprobaciones-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Título centrado */
+.titulo-aprobaciones {
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Tarjetas tipo botón */
+.aprobacion-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+/* Fila horizontal de información */
+.fila-aprobacion {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Primer campo destacado */
+.fila-aprobacion .destacado {
+  background-color: #222;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  min-width: 120px;
+}
+
+/* Campos normales */
+.fila-aprobacion p {
+  flex: 1;
+  margin: 0;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Campo adicional debajo */
+.detalle-aprobacion {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #333;
+}
+.detalle-aprobacion1 {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #ffffff;
+}
+.aprobacion-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.aprobacion-card p {
+  margin: 5px 0;
+}
+
