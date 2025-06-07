@@ -1,0 +1,52 @@
+.pantalla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* oscurece un poco el fondo para contraste */
+  }
+  
+  .contenido {
+    text-align: center;
+    color: white;
+  }
+  
+  .pregunta {
+    font-size: 28px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-style: italic;
+  }
+  
+  .botones {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .boton {
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+  }
+  
+  .boton:hover {
+    transform: scale(1.05);
+  }
+  
+  .boton.negro {
+    background-color: black;
+    color: white;
+  }
+  
+  .boton.blanco {
+    background-color: white;
+    color: black;
+  }

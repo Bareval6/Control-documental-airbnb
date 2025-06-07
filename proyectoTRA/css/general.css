@@ -1,0 +1,106 @@
+
+/* CUERPO Y BACKGROUND*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('../imagenes/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+
+/* inputs y botones*/
+
+
+button:hover {
+    background-color: #333;
+}
+
+/*MENU DE TODA LA WEB */
+.navbar {
+  background-color: #f2f2f2;
+  padding: 10px 0;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li {
+  margin: 0 25px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  position: relative;
+  padding: 8px 0;
+  display: inline-block;
+}
+
+.navbar nav ul li a:hover {
+  color: #555;
+}
+
+.navbar nav ul li a.active {
+  font-weight: bold;
+}
+
+.navbar nav ul li a.active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #c1c1c1;
+}
+
+
+/* Footer de toda la pagina Web */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 10px 0;
+  }
+  
+  .footer-top ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-top li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  input:read-only{
+    color: gray;
+  }
+  
